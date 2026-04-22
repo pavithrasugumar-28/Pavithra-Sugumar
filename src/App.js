@@ -11,7 +11,7 @@ import Ideas from "./components/Ideas";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Toaster } from "./components/ui/toaster";
-
+import FloatingMailButton from "./components/FloatingMailButton";
 const Scrapbook = () => {
   return (
     <div className="bg-[#F8F6F2] text-[#1F2937] min-h-screen font-inter">
@@ -27,6 +27,7 @@ const Scrapbook = () => {
       </main>
       <Footer />
       <Toaster />
+      <FloatingMailButton />
     </div>
   );
 };

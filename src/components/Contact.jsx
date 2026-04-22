@@ -188,7 +188,14 @@ ${form.message}`;
 
                 <li className="flex items-center gap-3">
                   <Mail size={16} />
-                  {personalInfo.email}
+                  <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=pavithrasugumar28@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline hover:text-[#E07856]"
+                  >
+                    pavithrasugumar28@gmail.com
+                  </a>
                 </li>
 
                 <li className="flex items-center gap-3">
@@ -198,13 +205,27 @@ ${form.message}`;
 
                 <li className="flex items-center gap-3">
                   <Github size={16} />
-                  github.com/pavithrasugumar-28
+                  <a
+                  href="https://github.com/pavithrasugumar-28"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline hover:text-[#E07856]"
+                  >
+                    github.com/pavithrasugumar-28
+                    </a>
                 </li>
 
                 <li className="flex items-center gap-3">
                   <Linkedin size={16} />
-                  in/pavithrasugumar
-                </li>
+                    <a
+                    href="https://www.linkedin.com/in/pavithrasugumar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-[#E07856]"
+                    >
+                      linkedin.com/in/pavithrasugumar
+                      </a>
+                      </li>
 
               </ul>
 
