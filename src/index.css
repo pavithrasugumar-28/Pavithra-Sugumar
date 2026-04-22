@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrapbook fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&family=Patrick+Hand&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F8F6F2;
+  color: #1F2937;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  .font-caveat {
+    font-family: 'Caveat', cursive;
+  }
+  .font-patrick {
+    font-family: 'Patrick Hand', cursive;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 40 28% 96%;
+    --foreground: 220 20% 15%;
+    --card: 40 30% 98%;
+    --card-foreground: 220 20% 15%;
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 20% 15%;
+    --primary: 220 20% 15%;
+    --primary-foreground: 40 28% 96%;
+    --secondary: 40 22% 90%;
+    --secondary-foreground: 220 20% 15%;
+    --muted: 40 22% 90%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 12 66% 61%;
+    --accent-foreground: 40 28% 96%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 28% 96%;
+    --border: 220 10% 85%;
+    --input: 220 10% 85%;
+    --ring: 12 66% 61%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Keyframes for subtle float */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0) rotate(var(--tw-rotate, 0)); }
+  50% { transform: translateY(-6px) rotate(var(--tw-rotate, 0)); }
+}
